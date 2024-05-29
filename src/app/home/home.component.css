@@ -1,0 +1,14 @@
+h1, h2{
+    /* font-size: clamp(min, cur, max); */
+    font-size: clamp(2vw, 9vw, 100px);
+    line-height: clamp(50px, 9vw, 110px);
+    text-align: left;
+    font-weight: 900;
+}
+h2{
+    /* font-size: clamp(min, cur, max); */
+    font-size: clamp(20px, 4vw, 50px);
+    line-height: clamp(30px, 5vw, 60px);
+    
+    
+}

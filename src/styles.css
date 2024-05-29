@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.iconsprimary{
+    @apply w-8 h-8 fill-current text-gray-50 hover:text-accent;
+}
+.iconsecondary{
+    @apply w-8 h-8 fill-current text-accent hover:text-gray-50;
+}
+
+.iconglobal{
+    @apply fill-current text-accent hover:text-gray-50;
+}
+
+.iconsboxed{
+    @apply p-1 border-2 bg-accent border-accent w-10 h-10 fill-current text-gray-50 hover:text-accent rounded-sm hover:bg-transparent;
+}
+
+/* * { border: 1px solid red !important; } */
