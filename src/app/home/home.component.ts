@@ -8,7 +8,10 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  experience: string;
+  constructor() {
+    this.experience = '5 years';
+   }
 
   ngOnInit(): void {
   }
