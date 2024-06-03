@@ -18,7 +18,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutComponent } from './about/about.component';
 import { ServicecardComponent } from './components/servicecard/servicecard.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ContactsComponent,
     AboutComponent,
     ServicecardComponent,
+    CardComponent,
     
 
   ],

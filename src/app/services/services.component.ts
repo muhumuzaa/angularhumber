@@ -16,6 +16,11 @@ export class ServicesComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<any>('../assets/data.json').subscribe(data =>{
       this.artists = data;
+    
+      console.log(this.artists);
+
+    },error => {
+      console.error('Error fetching data:', error);
     })
   }
 

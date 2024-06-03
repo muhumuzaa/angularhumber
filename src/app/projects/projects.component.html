@@ -5,11 +5,17 @@
         <p class="text-6xl font-bold pb-[1rem]">Solutions I have crafted</p>
         <p class="text-lg pb-[2rem] text-center ">A list of the projects that I have worked on ranging from multiple languages and frameworks.</p>
     </header>
-    <main class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <app-servicecard></app-servicecard>
-        <app-servicecard></app-servicecard>
-        <app-servicecard></app-servicecard>
+    <main class="grid grid-cols-3" *ngIf="projData" >
         
+        <div class="flex flex-col border-[1px] border-accent px-6 py-8 rounded-md" *ngFor= "let proj of projData">
+            
+            <app-card [mydata]="proj"></app-card>
+    
+        </div>
+  
+       
     </main>
+    
+    
 </div>
 </div>
