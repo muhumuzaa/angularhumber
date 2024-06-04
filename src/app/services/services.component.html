@@ -1,4 +1,4 @@
-<div class="flex items-center justify-center bg-background2 h-full w-full mb-0 text-gray-100 ">
+<div class="flex items-center justify-center bg-background2 w-full mb-0 text-gray-100 py-20">
     <div class="max-w-6xl mx-auto ">
     <header class="flex flex-col items-center justify-center">
         <p class="text-6xl font-bold pb-[1rem]">Software Development Services</p>
@@ -6,12 +6,9 @@
             websites, native mobile apps, web apps, cross-platform apps, and so much more. I take a holistic approach to software development. I take the time to get to know your 
             business, industry, operations, and processes. By doing so, I can build a software product that meets your needs and provides value to your business.</p>
     </header>
-    <!-- <main class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" *ngFor="let artist of artists"> -->
-    <main class="flex " *ngFor="let artist of artists">
-        <div>
-        <!-- <app-servicecard [artist]="artist"></app-servicecard> -->
-        Judhdhdhd
-    </div>
+    
+    <main class="grid md:grid-cols-3 gap-4" >
+        <app-card *ngFor="let item of myservices" [mydata] ="item"></app-card>
     </main>
 </div>
 </div>

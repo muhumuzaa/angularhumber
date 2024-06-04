@@ -1,18 +1,21 @@
 
-<div class="flex items-center justify-center bg-background2 h-full w-full mb-0 text-gray-100 ">
+<div class="flex items-center justify-center bg-background2 text-gray-100 py-20">
     <div class="max-w-6xl mx-auto ">
     <header class="flex flex-col items-center justify-center">
         <p class="text-6xl font-bold pb-[1rem]">Solutions I have crafted</p>
         <p class="text-lg pb-[2rem] text-center ">A list of the projects that I have worked on ranging from multiple languages and frameworks.</p>
     </header>
-    <main class="grid grid-cols-3" *ngIf="projData" >
+    <!-- <main class="grid grid-cols-3" *ngIf="projData$ |async as cards; else noCards" > -->
+    <main class="grid md:grid-cols-3 gap-4" >
         
-        <div class="flex flex-col border-[1px] border-accent px-6 py-8 rounded-md" *ngFor= "let proj of projData">
-            
-            <app-card [mydata]="proj"></app-card>
-    
-        </div>
+        
+          
+            <app-card *ngFor= "let data of myprojects" [mydata]="data" ></app-card>
+        
+       
+        
   
+        
        
     </main>
     

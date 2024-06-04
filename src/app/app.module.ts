@@ -20,6 +20,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicecardComponent } from './components/servicecard/servicecard.component';
 import {HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './components/card/card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CardComponent } from './components/card/card.component';
     MatListModule,
     MatCardModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
